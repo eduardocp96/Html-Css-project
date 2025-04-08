@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pago.css">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="contenedor-principal">
+
+        <div class="header">
+
+            <button class="btn-left">
+
+                <a href="index.html">
+                    <img class="icon-left" src="./imagenes/left.svg" alt="">
+                </a>
+
+            </button>
+
+            <h2 class="checkout">Checkout</h2>
+
+            <button class="btn-tune">
+                <img class="tune" src="./imagenes/tune.svg" alt="">
+            </button>
+        </div>
+
+       
+            <div class="contenedor1">
+                <div class="contenedor-foto">
+                    <img class="foto"  src="./imagenes/Product 1.png" alt="">
+                </div>
+                
+
+                <div class="container-informacion">
+                    
+                    <h2 class="title">Modern Light Clothes
+                        <img class="dots" src="./imagenes/3 dots.svg" alt="">
+                    </h2>
+                    <p>Dress Modern</p>
+                    <h3 class="precio">$212.99
+                        <div class="quantity-container">
+                            <button class="btn-quantity" onclick="decreaseQuantity()">-</button>
+                            <span id="quantity">4</span>
+                            <button class="btn-quantity" onclick="increaseQuantity()">+</button>
+                        </div>
+                    </h3>
+
+                </div>  
+                
+
+            </div>
+
+            <hr>
+
+            <div class="contenedor2">
+                <img class="foto" src="./imagenes/carta2.png" alt="">
+
+                <div class="container-informacion">
+                    <h2 class="title">Modern Light Clothes
+                        <img class="dots" src="./imagenes/3 dots.svg" alt="">
+                    </h2>
+                     <p>Dress Modern</p>
+                    <h3 class="precio">$212.99
+                        <div class="quantity-container">
+                            <button class="btn-quantity" onclick="decreaseQuantity()">-</button>
+                            <span id="quantity">1</span>
+                            <button class="btn-quantity" onclick="increaseQuantity()">+</button>
+                        </div>
+                    </h3>
+                </div>
+                
+            </div>
+
+            <hr>
+            
+            <div class="contenedorshipping">
+
+                <h3 class="shipping"><strong>Shipping Information</strong></h3>
+                <img class="visa" src="./imagenes/Card.png" alt="">
+                
+              </div>
+              
+              
+              <div class="costo">
+
+                <div class="N1">
+                    <p class="item1">Total (9 tiems) 
+                    <p class="total1"><strong>$1,014.95</strong></p>
+                </p> 
+                </div>
+                 
+                <div class="N1">
+                    
+                    <p class="item2">Shipping Fee 
+                    <p class="total2"><strong>$.0.00</strong></p>
+                </p> 
+
+
+                </div>
+
+                <div class="N1">
+
+                    <p class="item3">Discount
+                    <p class="total3"> <strong>$.0.00</strong></p></p> 
+                </div>
+
+               
+
+
+                <hr>
+
+                <div class="N2">
+                    <p class="item4">Sub-Total
+                    <p class="totalprecio"><strong>$1,014.95</strong></p>
+                </p>
+                </div>
+
+                
+                
+              </div>
+
+
+
+              <div class="btn-pay">
+
+
+                
+                <button class="pay"> <strong>Pay</strong>
+                    <a href="" id="pagarLink"></a>
+                </button>
+            </div>
+        
+            <template id="my-template">
+                <swal-title>
+                    Pago realizado con exito
+                </swal-title>
+                <swal-icon type="success" color="green"></swal-icon>
+                <swal-button type="confirm">
+                    OK
+                </swal-button>
+                <swal-button type="cancel">
+                    Cancel
+                </swal-button>
+         
+                <swal-param name="allowEscapeKey" value="false" />
+                <swal-param name="customClass" value='{ "popup": "my-popup" }' />
+                <swal-function-param name="didOpen" value="popup => console.log(popup)" />
+            </template>
+        
+        
+            <script src="pago.js"></script>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+   
+</body>
+</html>

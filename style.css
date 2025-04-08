@@ -1,0 +1,460 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Encode Sans', sans-serif;
+}
+.container-general {
+    padding: 40px 10px 50px 15px;
+}
+.header {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.hello {
+    color: rgb(189, 189, 189);
+}
+.profile {
+    display: flex;
+    padding-left: 120px;
+    width: 35px;
+}
+
+.contenedor-input {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.input {
+    height: 48px;
+    width: 300px;
+    border-radius: 8px;
+    border: 1px solid rgb(197, 197, 197);
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path fill="gray" d="M15.5,14h-.79l-.28-.27A6.471,6.471,0,0,0,17,9.5,6.5,6.5,0,1,0,10.5,16a6.471,6.471,0,0,0,4.23-1.57l.27.28v.79l5,4.99L20.49,19ZM10.5,14A4.5,4.5,0,1,1,15,9.5,4.5,4.5,0,0,1,10.5,14Z"/></svg>') no-repeat left 15px center;
+}
+
+.filter {
+    padding-left: 15px;
+    padding-top: 0;
+    height: 50px;
+    width: 50px;
+}
+.container-btn {
+    display: grid;
+    grid-template-columns: repeat(4,0.27fr);
+    padding-top: 2vh;
+    background-color: white;
+    gap: 12px;
+    overflow-x: auto
+}
+.btn {
+   display:flex;
+   flex-direction: row;
+   text-align: center;
+   justify-content: center;
+    width: 93px;
+    color:black;
+    height: 40px;
+    border-radius: 12px;
+    border: 0.5px solid rgb(170, 170, 170);
+    background-color: white;
+    
+   
+}
+
+.texto-btn {
+    padding-left: 5px;
+    padding-top: 13px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgb(29, 29, 29);
+}
+.texto-btn:hover {
+    padding-left: 8px;
+    padding-top: 13px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+.btn:hover {
+    background-color: black;
+    color:white;
+    
+}
+.texto-btn2 {
+    padding-right: 55px;
+    padding-top: 13px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgb(29, 29, 29);
+}
+
+.texto-btn2:hover {
+    padding-right: 55px;
+    padding-top: 13px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+
+.imagen1 {
+    height: 22px;
+    padding-top: 8px;
+    
+}
+
+.imagen2 {
+    padding-top: 5px;
+   
+    height: 32px;
+}
+.imagen3 {
+    padding-top: 8px;
+    height: 27px;
+}
+
+.imagen4 {
+    padding-top: 5px;
+}
+
+.container-cards {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-top: 5vh;
+    justify-content: center;
+    padding-left: 12px;
+    gap: 12px;
+    padding-bottom: 30px;
+}
+.parrafos {
+    font-size: 2vh;
+    color: rgb(175, 175, 175);
+    padding-bottom: 15px;
+}
+.title {
+    font-size: 0.9rem;
+}
+
+.img-cartas {
+ border-radius: 15px;
+ width: 150px;
+
+}
+.heart{
+    z-index: 10;
+}
+
+
+.img-cartas:hover {
+    border: 1px solid rgb(110, 110, 110);
+}
+.precio {
+    font-size:18px;
+    display: flex;
+    flex-direction: row;
+    font-weight: 510;
+}
+.estrella {
+    width: 20px;
+    height: 18px;
+  padding-left: 15px;
+    display: inline-block;
+    
+}
+
+.score {
+    font-size: 15px;
+   padding-left: 5px;
+    padding-top: 2px;
+    font-weight: 100;
+}
+
+.carta4 {
+    padding-top: 25px;
+}
+
+.container-seleccion{
+    background-color: black;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 55px;
+  
+    padding-top: 15px;
+    position: fixed; /* Mantiene el contenedor fijo en la parte superior */
+    bottom:  0; /* Asegura que esté en la parte superior de la página */
+    left: 0; /* Asegura que el contenedor ocupe todo el ancho de la pantalla */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    z-index: 1000; /* Asegura que el contenedor se quede encima de otros elementos */
+    
+}
+
+.btn2{
+   
+    border: none;
+    width: 40px;
+    background-color: rgb(41, 37, 38);
+    color: white;
+    border-radius: 50%;
+    height: 40px;
+    display: flex;
+    align-items: center; /* Centra el contenido dentro del botón */
+    justify-content: center; /* Centra el contenido dentro del botón */
+    margin: 0 auto; /* Centra el botón dentro de su celda */
+    
+}
+
+.vector {
+padding-top: 0;
+}
+
+@media (min-width: 1367px) and (max-width: 1920px) {
+
+    .container-general {
+        background-color: rgb(248, 248, 248);
+        display: grid;
+      
+    }
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: rgb(248, 248, 248);
+        
+    }
+
+    .contenedor-input {
+        padding-top: 10px;
+        display: flex;
+        flex-direction: row;
+       
+    }
+    
+    .input {
+        height: 48px;
+        width: 300px;
+        border-radius: 8px;
+        border: 1px solid rgb(197, 197, 197);
+        background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path fill="gray" d="M15.5,14h-.79l-.28-.27A6.471,6.471,0,0,0,17,9.5,6.5,6.5,0,1,0,10.5,16a6.471,6.471,0,0,0,4.23-1.57l.27.28v.79l5,4.99L20.49,19ZM10.5,14A4.5,4.5,0,1,1,15,9.5,4.5,4.5,0,0,1,10.5,14Z"/></svg>') no-repeat left 15px center;
+    }
+
+    .hello {
+        color: rgb(56, 56, 56);
+        font-size: 2rem;
+        display: flex;
+        
+    }
+    .profile {
+        
+        margin-left: 1000px;
+        width: 65px;
+        height: 65px;
+    }
+
+    .name {
+        font-size: 3rem;
+    }
+
+    .contenedor-input {
+        display: flex;
+        padding-bottom: 25px;
+        flex-direction: row;
+        justify-content:center;
+    }
+
+    .input {
+        height: 48px;
+        width: 500px;
+        border-radius: 8px;
+        border: 1px solid rgb(197, 197, 197);
+        background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path fill="gray" d="M15.5,14h-.79l-.28-.27A6.471,6.471,0,0,0,17,9.5,6.5,6.5,0,1,0,10.5,16a6.471,6.471,0,0,0,4.23-1.57l.27.28v.79l5,4.99L20.49,19ZM10.5,14A4.5,4.5,0,1,1,15,9.5,4.5,4.5,0,0,1,10.5,14Z"/></svg>') no-repeat left 15px center;
+    }
+    .container-cards {
+        display: flex;
+        gap:30px;
+        margin-bottom: 50px;
+
+    }
+    .img-cartas {
+        justify-content: center;
+        width: 400px;
+    }
+
+    .container-seleccion{
+        opacity: 0.5;
+        border-radius: 0px;
+        
+    }
+
+    .btn2 {
+        border: none;
+        width: 50px;
+        background-color: rgb(41, 37, 38);
+        color: white;
+        height: 50px;
+        align-items: center; /* Centra el contenido dentro del botón */
+        justify-content: center; /* Centra el contenido dentro del botón */
+        margin: 0 auto; /* Centra el botón dentro de su celda */
+    }
+
+    .container-btn {
+        background-color:rgb(255, 255, 255);
+        gap: 0px;
+        display: flex;
+      justify-content: center;
+      padding-top: 0vh;
+      border: 1px solid rgb(231, 231, 231);
+      border-radius: 5px;
+      
+     
+    }
+   
+    .btn {
+        border: 0px;
+        border-radius: 0px;
+        padding-top: 0px;
+        width: 400px;
+        background-color:rgb(255, 255, 255);
+        
+
+    }
+
+    .btn:hover {
+        background-color: rgb(235, 235, 235);
+        color:white;
+        border-radius: 15px;
+        
+    }
+
+    .btn .imagen1 {
+        display: none;
+     
+    }
+
+    .btn .imagen2 {
+        display: none;
+       
+    }
+
+    .btn .imagen3 {
+       display: none;
+    }
+
+    .btn .imagen4 {
+        display: none;
+    }
+
+ 
+
+    .texto-btn {
+        
+        font-size: 1.2rem;
+        padding-top: 10px;
+        color: rgb(87, 87, 87);
+    }
+
+    .texto-btn:hover {
+        
+        font-size: 1.6rem;
+        padding-top: 10px;
+        color: rgb(41, 41, 41);
+    }
+ }
+   /* Media query para tablets (pantallas entre 600px y 1024px) */
+   
+@media  (min-width:768px) and (max-width: 1024px) {
+
+    .container-general {
+        display: grid;
+       padding: 30px 0px 20px 18px;
+      
+    }
+    
+    .hello {
+        color: rgb(189, 189, 189);
+        font-size: 2rem;
+    }
+    .profile{
+        width: 60px;
+        display: flex;
+        padding-left: 250px;
+    }
+
+    
+.contenedor-input {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+ 
+}
+
+.input {
+    height: 58px;
+    width: 500px;
+    border-radius: 8px;
+    border: 1px solid rgb(197, 197, 197);
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path fill="gray" d="M15.5,14h-.79l-.28-.27A6.471,6.471,0,0,0,17,9.5,6.5,6.5,0,1,0,10.5,16a6.471,6.471,0,0,0,4.23-1.57l.27.28v.79l5,4.99L20.49,19ZM10.5,14A4.5,4.5,0,1,1,15,9.5,4.5,4.5,0,0,1,10.5,14Z"/></svg>') no-repeat left 15px center;
+}
+
+.filter {
+    padding-left: 130px;
+    padding-top: 0;
+    height: 50px;
+    width: 50px;
+}
+
+.btn {
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+     width: 170px;
+     color:black;
+     height: 40px;
+     border-radius: 12px;
+     border: 0.5px solid rgb(170, 170, 170);
+     background-color: white;
+     
+    
+ }
+
+ .container-btn {
+    display: grid;
+    grid-template-columns: repeat(4,0.27fr);
+    padding-top: 2vh;
+    background-color: white;
+    gap: 12px;
+    overflow-x: auto
+}
+
+ .container-cards {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-top: 5vh;
+    justify-content: center;
+    gap: 5px;
+    padding-bottom: 100px;
+    padding-left: 38px;
+}
+
+.img-cartas {
+    border-radius: 15px;
+    width: 300px;
+   
+   }
+
+
+
+
+
+
+
+   
+
+}

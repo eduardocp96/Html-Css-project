@@ -1,0 +1,327 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.contenedor-principal {
+    padding: 10px 20px 10px 20px;
+}
+body {
+    font-family: 'Encode Sans', sans-serif;
+
+}
+.header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-top:  25px;  
+    padding-bottom: 30px;
+}
+
+.btn-left {
+    background-color: white;
+    border: none;
+
+}
+
+.icon-left {
+    width: 40px;
+
+}
+
+.btn-left:hover {
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 100%;
+}
+
+.btn-tune {
+    background-color: white;
+    border: none;
+  border-radius: 15px;
+}
+
+.btn-tune:hover{
+    background-color: rgb(0, 0, 0);
+    border: none;
+}
+
+.tune {
+    width: 40px;    
+    
+}
+
+.quantity-container {
+    display: flex;
+   
+   
+    padding-left: 80px;
+}
+.btn-quantity {
+    border-radius: 50px;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #ccc;
+    background-color:#ffffff;
+}
+
+.btn-quantity:hover {
+    border-radius: 50px;
+    height: 25px;
+    width: 25px;
+    border: 1px solid #ccc;
+    background-color:#ffffff;
+    
+}
+
+#quantity {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50px;
+    background-color: white;
+    font-size: 18px;
+}
+
+.contenedor1 {
+    display: flex;
+   padding-bottom: 25px;
+    
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+
+
+.container-informacion {
+    padding-left: 23px;
+    padding-top: 5px;
+}
+
+
+
+.foto {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+
+
+}
+
+.precio {
+    padding-top: 25px;
+    display: flex;
+}
+
+hr {
+   
+    border: 1px solid rgb(241, 241, 241);
+}
+
+
+.contenedor2 {
+    display: flex;
+   padding-top: 25px;
+   padding-bottom: 25px;
+    
+}
+.total1 {
+    margin-left: 140px;
+}
+
+.total2 {
+    margin-left: 140px;
+}
+.total3 {
+    margin-left: 165px;
+}
+.title {
+    font-size: 1rem;
+}
+
+.contenedorshipping {
+    padding-top: 50px;
+    
+}
+
+.shipping {
+    padding-bottom: 20px;
+}
+
+.visa {
+    padding-bottom: 20px;
+}
+
+.N1{
+    
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 15px;
+}
+
+.N2 {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    
+}
+
+.costo {
+    padding-bottom: 20px;
+}
+
+.totalprecio {
+    margin-left: 165px;
+}
+.btn-pay {
+    text-align: center;
+    justify-content: center;
+   
+}
+.pay {
+    background-color: black;
+    width: 350px;
+    height: 60px;
+    border-radius: 50px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+
+
+
+@media (min-width:1367px) and (max-width:1920px) {
+
+    .contenedor-principal {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 50px 220px 10px 220px;
+    }
+
+    .header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-top:  25px;  
+    padding-bottom: 30px;
+    }
+    .contenedor1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contenedor2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .foto {
+        width: 250px;
+        height: 300px;
+    }
+
+    .contenedorshipping {
+        display: flex;
+        justify-content: center;
+    }
+  .shipping {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    font-size: 30px;
+
+  }
+
+    .visa {
+        display: flex;
+        padding-left: 60px;
+    }
+
+    
+
+  .costo {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  .item1 {
+    font-size: 1.2rem;
+  }
+
+  .item2 {
+    font-size: 1.2rem;
+  }
+  .item3 {
+    font-size: 1.2rem;
+  }
+
+  .item4 {
+    font-size: 1.3rem;
+    font-weight: bolder;
+  }
+  .totalprecio {
+    font-weight: bolder;
+  }
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.7rem;
+}
+
+.checkout {
+    font-size: 3rem;
+    padding-bottom: 20px;
+}
+
+.icon-left {
+    width: 80px;
+}
+
+.tune {
+    width: 80px;
+}
+
+.btn-quantity {
+    width: 35px;
+    height: 35px;
+}
+
+.btn-quantity:hover {
+    width: 40px;
+    height: 40px;
+    
+}
+
+a {
+    font-size: 20px;
+}
+.pay{ 
+    color: white;
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+
+.btn-pay {
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+}
